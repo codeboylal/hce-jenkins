@@ -11,8 +11,8 @@ pipeline {
 
         stage('Get Code') {
             steps {
-                echo 'Step 1: checking out the latest code from this repo'
-                checkout scm
+                echo 'Step 1: pulling the latest code from GitHub'
+                git branch: 'main', url: 'https://github.com/codeboylal/hce-jenkins.git'
             }
         }
 
