@@ -37,7 +37,7 @@ pipeline {
 
     post {
         success {
-            echo 'Done! Visit http://localhost to see the site.'
+            echo 'Done! Visit http://<your-ec2-public-ip>:8080 to see the site.'
         }
         failure {
             echo 'Pipeline failed — scroll up to see which stage broke and why.'
