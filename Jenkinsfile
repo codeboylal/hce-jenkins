@@ -30,7 +30,7 @@ pipeline {
                 sh "docker rm ${CONTAINER_NAME} || true"
 
                 echo 'Step 4: starting a new container from the fresh image'
-                sh "docker run -d --name ${CONTAINER_NAME} -p 80:80 ${DOCKER_IMAGE}"
+                sh "docker run -d --name ${CONTAINER_NAME} -p 8080:80 ${DOCKER_IMAGE}"
             }
         }
     }
